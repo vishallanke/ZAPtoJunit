@@ -1,0 +1,10 @@
+{
+  "10098": {
+    "alert_name": "Cross-Domain Misconfiguration",
+    "regex_uris": [
+      "https://product-int.cloud",
+      "https://outlook-qa-15.auth0.com"
+    ],
+    "reason_to_whitelist": "Thi9rd Party Login Issues are Out of Scope of MyGateway"
+  }
+}
