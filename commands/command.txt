@@ -1,0 +1,7 @@
+Execute from C Drive
+
+C:\>
+
+.\Users\Z002zpkw\AppData\Local\Programs\Python\Python37-32\python.exe "D:\Gitlab_Projects\ZapToJunitNPM\CHECKEDIN\command-whitelist.py
+
+.\Users\Z002zpkw\AppData\Local\Programs\Python\Python37-32\python.exe "D:\Gitlab_Projects\ZapToJunitNPM\CHECKEDIN\command-no-whitelist.py
