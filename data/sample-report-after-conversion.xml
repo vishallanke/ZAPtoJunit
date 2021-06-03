@@ -1,0 +1,814 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites id="zap.security.scan"><testsuite id="Info" name="Info"><testsuite id="10096" name="Timestamp Disclosure - Unix"><testcase name="https://prod.cloud"><failure message="Problem:&#10;&lt;p&gt;A timestamp was disclosed by the application/web server - Unix&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;">{
+  "alert": "Timestamp Disclosure - Unix",
+  "alertRef": "10096",
+  "count": "3",
+  "instances": [
+    {
+      "evidence": "01021549",
+      "method": "GET",
+      "uri": "https://prod.cloud/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/buildings"
+    },
+    {
+      "evidence": "96899651",
+      "method": "GET",
+      "uri": "https://prod.cloud/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/buildings"
+    },
+    {
+      "evidence": "74730026",
+      "method": "GET",
+      "uri": "https://prod.cloud/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices"
+    }
+  ],
+  "name": "Timestamp Disclosure - Unix",
+  "pluginid": "10096",
+  "reference": "&lt;p&gt;http://projects.webappsec.org/w/page/13246936/Information%20Leakage&lt;/p&gt;"
+}</failure></testcase><testcase name="https://prodint.cloud"><failure message="Problem:&#10;&lt;p&gt;A timestamp was disclosed by the application/web server - Unix&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;">{
+  "alert": "Timestamp Disclosure - Unix",
+  "alertRef": "10096",
+  "count": "2",
+  "instances": [
+    {
+      "evidence": "46910758",
+      "method": "GET",
+      "uri": "https://prodint.cloud/api/v1/me/permissions"
+    },
+    {
+      "evidence": "22610014",
+      "method": "GET",
+      "uri": "https://prodint.cloud/api/v1/me/permissions"
+    }
+  ],
+  "name": "Timestamp Disclosure - Unix",
+  "pluginid": "10096",
+  "reference": "&lt;p&gt;http://projects.webappsec.org/w/page/13246936/Information%20Leakage&lt;/p&gt;"
+}</failure></testcase><testcase name="https://product-int.cloud"><failure message="Problem:&#10;&lt;p&gt;A timestamp was disclosed by the application/web server - Unix&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;">{
+  "alert": "Timestamp Disclosure - Unix",
+  "alertRef": "10096",
+  "count": "13",
+  "instances": [
+    {
+      "evidence": "72602114",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices?limit=50"
+    },
+    {
+      "evidence": "20190902",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/12fe1e9e-f9ae-4cfe-b519-7ea463b4a72c"
+    },
+    {
+      "evidence": "54210900",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices?limit=50"
+    },
+    {
+      "evidence": "39917547",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices?limit=50"
+    },
+    {
+      "evidence": "43290668",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/6f21e0fa-1e03-4cf5-902a-938f45f0b313"
+    },
+    {
+      "evidence": "76255164",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52/commands?status=pending"
+    },
+    {
+      "evidence": "25459514",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/commands/cb87561a-4785-460b-b123-c6f82302df1f"
+    },
+    {
+      "evidence": "26346745",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/6f21e0fa-1e03-4cf5-902a-938f45f0b313"
+    },
+    {
+      "evidence": "19290983",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/6f21e0fa-1e03-4cf5-902a-938f45f0b313"
+    },
+    {
+      "evidence": "88058274",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/6f21e0fa-1e03-4cf5-902a-938f45f0b313"
+    },
+    {
+      "evidence": "68646718",
+      "method": "POST",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices"
+    },
+    {
+      "evidence": "39563697",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/fe1fe4f9-f453-47c9-a0df-83f14aa39aaf"
+    },
+    {
+      "evidence": "03309973",
+      "method": "GET",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/fe1fe4f9-f453-47c9-a0df-83f14aa39aaf"
+    }
+  ],
+  "name": "Timestamp Disclosure - Unix",
+  "pluginid": "10096",
+  "reference": "&lt;p&gt;http://projects.webappsec.org/w/page/13246936/Information%20Leakage&lt;/p&gt;"
+}</failure></testcase><testcase name="https://outlook-qa-15.auth0.com"><failure message="Problem:&#10;&lt;p&gt;A timestamp was disclosed by the application/web server - Unix&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;">{
+  "alert": "Timestamp Disclosure - Unix",
+  "alertRef": "10096",
+  "count": "8",
+  "instances": [
+    {
+      "evidence": "1613674522",
+      "method": "POST",
+      "uri": "https://outlook-qa-15.auth0.com/oauth/token"
+    },
+    {
+      "evidence": "31557600",
+      "method": "POST",
+      "uri": "https://outlook-qa-15.auth0.com/oauth/token"
+    },
+    {
+      "evidence": "1613674912",
+      "method": "POST",
+      "uri": "https://outlook-qa-15.auth0.com/oauth/token"
+    },
+    {
+      "evidence": "1613674662",
+      "method": "POST",
+      "uri": "https://outlook-qa-15.auth0.com/oauth/token"
+    },
+    {
+      "evidence": "1613674660",
+      "method": "POST",
+      "uri": "https://outlook-qa-15.auth0.com/oauth/token"
+    },
+    {
+      "evidence": "1613468648",
+      "method": "GET",
+      "uri": "https://outlook-qa-15.auth0.com/.well-known/openid-configuration"
+    },
+    {
+      "evidence": "1613674521",
+      "method": "POST",
+      "uri": "https://outlook-qa-15.auth0.com/oauth/token"
+    },
+    {
+      "evidence": "1611163907",
+      "method": "GET",
+      "uri": "https://outlook-qa-15.auth0.com/.well-known/jwks.json"
+    }
+  ],
+  "name": "Timestamp Disclosure - Unix",
+  "pluginid": "10096",
+  "reference": "&lt;p&gt;http://projects.webappsec.org/w/page/13246936/Information%20Leakage&lt;/p&gt;"
+}</failure></testcase><testcase name="https://assets.cloud"><failure message="Problem:&#10;&lt;p&gt;A timestamp was disclosed by the application/web server - Unix&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;">{
+  "alert": "Timestamp Disclosure - Unix",
+  "alertRef": "10096",
+  "count": "361",
+  "instances": [
+    {
+      "evidence": "1925078388",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "15728640",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "270540808",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "1537002063",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "528482304",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "176160768",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "385875968",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "666307205",
+      "method": "GET",
+      "uri": "https://assets.cloud/main.57bf864a435bce3c4297.js"
+    },
+    {
+      "evidence": "33554433",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "1359893119",
+      "method": "GET",
+      "uri": "https://assets.cloud/main.57bf864a435bce3c4297.js"
+    },
+    {
+      "evidence": "1933667412",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "536870913",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "275423344",
+      "method": "GET",
+      "uri": "https://assets.cloud/main.57bf864a435bce3c4297.js"
+    },
+    {
+      "evidence": "1207959553",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "17039488",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "24177077",
+      "method": "GET",
+      "uri": "https://assets.cloud/main.57bf864a435bce3c4297.js"
+    },
+    {
+      "evidence": "1495990901",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "553648256",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "1546045734",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "evidence": "167772160",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    }
+  ],
+  "name": "Timestamp Disclosure - Unix",
+  "pluginid": "10096",
+  "reference": "&lt;p&gt;http://projects.webappsec.org/w/page/13246936/Information%20Leakage&lt;/p&gt;"
+}</failure></testcase></testsuite><testsuite id="90033" name="Loosely Scoped Cookie"><testcase name="https://outlook-qa-15.auth0.com"><failure message="Problem:&#10;&lt;p&gt;Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Always scope cookies to a FQDN (Fully Qualified Domain Name).&lt;/p&gt;">{
+  "alert": "Loosely Scoped Cookie",
+  "alertRef": "90033",
+  "count": "5",
+  "instances": [
+    {
+      "method": "GET",
+      "uri": "https://outlook-qa-15.auth0.com/.well-known/openid-configuration"
+    },
+    {
+      "method": "GET",
+      "uri": "https://outlook-qa-15.auth0.com/.well-known/openid-configuration"
+    },
+    {
+      "method": "GET",
+      "uri": "https://outlook-qa-15.auth0.com/.well-known/jwks.json"
+    },
+    {
+      "method": "POST",
+      "uri": "https://outlook-qa-15.auth0.com/oauth/token"
+    },
+    {
+      "method": "GET",
+      "uri": "https://outlook-qa-15.auth0.com/.well-known/jwks.json"
+    }
+  ],
+  "name": "Loosely Scoped Cookie",
+  "pluginid": "90033",
+  "reference": "&lt;p&gt;https://tools.ietf.org/html/rfc6265#section-4.1&lt;/p&gt;&lt;p&gt;https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html&lt;/p&gt;&lt;p&gt;http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies&lt;/p&gt;"
+}</failure></testcase></testsuite><testsuite id="10027" name="Information Disclosure - Suspicious Comments"><testcase name="https://assets.cloud"><failure message="Problem:&#10;&lt;p&gt;The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.&lt;/p&gt;">{
+  "alert": "Information Disclosure - Suspicious Comments",
+  "alertRef": "10027",
+  "count": "3",
+  "instances": [
+    {
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    },
+    {
+      "method": "GET",
+      "uri": "https://assets.cloud/polyfills.6bf358a15d6a3cb957d5.js"
+    },
+    {
+      "method": "GET",
+      "uri": "https://assets.cloud/main.57bf864a435bce3c4297.js"
+    }
+  ],
+  "name": "Information Disclosure - Suspicious Comments",
+  "pluginid": "10027",
+  "reference": "&lt;p&gt;&lt;/p&gt;"
+}</failure></testcase></testsuite></testsuite><testsuite id="Low" name="Low"><testsuite id="10015" name="Incomplete or No Cache-control and Pragma HTTP Header Set"><testcase name="https://prod.cloud"><failure message="Problem:&#10;&lt;p&gt;The cache-control and pragma HTTP header have not been set properly or are missing allowing the browser and proxies to cache content.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate; and that the pragma HTTP header is set with no-cache.&lt;/p&gt;">{
+  "alert": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+  "alertRef": "10015",
+  "count": "4",
+  "instances": [
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://prod.cloud/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices"
+    },
+    {
+      "method": "PUT",
+      "param": "Cache-Control",
+      "uri": "https://prod.cloud/buildings/888111c1-61db-4c76-acd7-e5e6ed8847d8/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52"
+    },
+    {
+      "method": "DELETE",
+      "param": "Cache-Control",
+      "uri": "https://prod.cloud/buildings/888111c1-61db-4c76-acd7-e5e6ed8847d8/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://prod.cloud/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/buildings"
+    }
+  ],
+  "name": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+  "pluginid": "10015",
+  "reference": "&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching&lt;/p&gt;"
+}</failure></testcase><testcase name="https://prodint.cloud"><failure message="Problem:&#10;&lt;p&gt;The cache-control and pragma HTTP header have not been set properly or are missing allowing the browser and proxies to cache content.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate; and that the pragma HTTP header is set with no-cache.&lt;/p&gt;">{
+  "alert": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+  "alertRef": "10015",
+  "count": "5",
+  "instances": [
+    {
+      "evidence": "max-age=0, must-revalidate",
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://prodint.cloud/api/v1/me"
+    },
+    {
+      "method": "PUT",
+      "param": "Cache-Control",
+      "uri": "https://prodint.cloud/api/v1/me/identity"
+    },
+    {
+      "evidence": "max-age=0, must-revalidate",
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://prodint.cloud/api/v1/me/memberships"
+    },
+    {
+      "evidence": "max-age=0, must-revalidate",
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://prodint.cloud/api/v1/me/permissions"
+    },
+    {
+      "evidence": "max-age=0, must-revalidate",
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://prodint.cloud/api/v1/organizations"
+    }
+  ],
+  "name": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+  "pluginid": "10015",
+  "reference": "&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching&lt;/p&gt;"
+}</failure></testcase><testcase name="https://product-int.cloud"><failure message="Problem:&#10;&lt;p&gt;The cache-control and pragma HTTP header have not been set properly or are missing allowing the browser and proxies to cache content.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate; and that the pragma HTTP header is set with no-cache.&lt;/p&gt;">{
+  "alert": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+  "alertRef": "10015",
+  "count": "13",
+  "instances": [
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52/commands"
+    },
+    {
+      "method": "PUT",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52/attributes"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices?limit=50"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/6f21e0fa-1e03-4cf5-902a-938f45f0b313"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52/commands?status=pending"
+    },
+    {
+      "method": "DELETE",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52"
+    },
+    {
+      "method": "POST",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/bec3cde3-95e2-4cda-9b98-51f1aba2ed0d/commands"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/12fe1e9e-f9ae-4cfe-b519-7ea463b4a72c"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/fe1fe4f9-f453-47c9-a0df-83f14aa39aaf"
+    },
+    {
+      "method": "POST",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/device-previews/E4CPQ3-NCSVH-NLCTS-T4NIH-4XY3I"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/bec3cde3-95e2-4cda-9b98-51f1aba2ed0d"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52/commands?status=cancel-requested"
+    }
+  ],
+  "name": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+  "pluginid": "10015",
+  "reference": "&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching&lt;/p&gt;"
+}</failure></testcase><testcase name="https://outlook-qa-15.auth0.com"><failure message="Problem:&#10;&lt;p&gt;The cache-control and pragma HTTP header have not been set properly or are missing allowing the browser and proxies to cache content.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate; and that the pragma HTTP header is set with no-cache.&lt;/p&gt;">{
+  "alert": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+  "alertRef": "10015",
+  "count": "3",
+  "instances": [
+    {
+      "evidence": "no-store",
+      "method": "POST",
+      "param": "Cache-Control",
+      "uri": "https://outlook-qa-15.auth0.com/oauth/token"
+    },
+    {
+      "evidence": "public, max-age=15, stale-while-revalidate=15, stale-if-error=15",
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://outlook-qa-15.auth0.com/.well-known/openid-configuration"
+    },
+    {
+      "evidence": "public, max-age=15, stale-while-revalidate=15, stale-if-error=15",
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://outlook-qa-15.auth0.com/.well-known/jwks.json"
+    }
+  ],
+  "name": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+  "pluginid": "10015",
+  "reference": "&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching&lt;/p&gt;"
+}</failure></testcase><testcase name="https://assets.cloud"><failure message="Problem:&#10;&lt;p&gt;The cache-control and pragma HTTP header have not been set properly or are missing allowing the browser and proxies to cache content.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate; and that the pragma HTTP header is set with no-cache.&lt;/p&gt;">{
+  "alert": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+  "alertRef": "10015",
+  "count": "6",
+  "instances": [
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://assets.cloud/assets/i18n/imported/en.json"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://assets.cloud/assets/i18n/template.json"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://assets.cloud/assets/i18n/imported/template.json"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://assets.cloud/"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://assets.cloud/assets/i18n/en.json"
+    },
+    {
+      "method": "GET",
+      "param": "Cache-Control",
+      "uri": "https://assets.cloud/styles.429240e360669c85a32c.css"
+    }
+  ],
+  "name": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+  "pluginid": "10015",
+  "reference": "&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching&lt;/p&gt;"
+}</failure></testcase></testsuite><testsuite id="10021" name="X-Content-Type-Options Header Missing"><testcase name="https://prod.cloud"><failure message="Problem:&#10;&lt;p&gt;The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.&lt;/p&gt;&lt;p&gt;If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.&lt;/p&gt;">{
+  "alert": "X-Content-Type-Options Header Missing",
+  "alertRef": "10021",
+  "count": "4",
+  "instances": [
+    {
+      "method": "PUT",
+      "param": "X-Content-Type-Options",
+      "uri": "https://prod.cloud/buildings/888111c1-61db-4c76-acd7-e5e6ed8847d8/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://prod.cloud/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/buildings"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://prod.cloud/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices"
+    },
+    {
+      "method": "DELETE",
+      "param": "X-Content-Type-Options",
+      "uri": "https://prod.cloud/buildings/888111c1-61db-4c76-acd7-e5e6ed8847d8/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52"
+    }
+  ],
+  "name": "X-Content-Type-Options Header Missing",
+  "pluginid": "10021",
+  "reference": "&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://owasp.org/www-community/Security_Headers&lt;/p&gt;"
+}</failure></testcase><testcase name="https://prodint.cloud"><failure message="Problem:&#10;&lt;p&gt;The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.&lt;/p&gt;&lt;p&gt;If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.&lt;/p&gt;">{
+  "alert": "X-Content-Type-Options Header Missing",
+  "alertRef": "10021",
+  "count": "5",
+  "instances": [
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://prodint.cloud/api/v1/me/memberships"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://prodint.cloud/api/v1/me"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://prodint.cloud/api/v1/organizations"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://prodint.cloud/api/v1/me/permissions"
+    },
+    {
+      "method": "PUT",
+      "param": "X-Content-Type-Options",
+      "uri": "https://prodint.cloud/api/v1/me/identity"
+    }
+  ],
+  "name": "X-Content-Type-Options Header Missing",
+  "pluginid": "10021",
+  "reference": "&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://owasp.org/www-community/Security_Headers&lt;/p&gt;"
+}</failure></testcase><testcase name="https://product-int.cloud"><failure message="Problem:&#10;&lt;p&gt;The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.&lt;/p&gt;&lt;p&gt;If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.&lt;/p&gt;">{
+  "alert": "X-Content-Type-Options Header Missing",
+  "alertRef": "10021",
+  "count": "13",
+  "instances": [
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/device-previews/E4CPQ3-NCSVH-NLCTS-T4NIH-4XY3I"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52/commands?status=pending"
+    },
+    {
+      "method": "POST",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices"
+    },
+    {
+      "method": "POST",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/bec3cde3-95e2-4cda-9b98-51f1aba2ed0d/commands"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/fe1fe4f9-f453-47c9-a0df-83f14aa39aaf"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/bec3cde3-95e2-4cda-9b98-51f1aba2ed0d"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/6f21e0fa-1e03-4cf5-902a-938f45f0b313"
+    },
+    {
+      "method": "PUT",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52/attributes"
+    },
+    {
+      "method": "DELETE",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52/commands?status=cancel-requested"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52/commands"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/features/12fe1e9e-f9ae-4cfe-b519-7ea463b4a72c"
+    },
+    {
+      "method": "GET",
+      "param": "X-Content-Type-Options",
+      "uri": "https://product-int.cloud/api/v1/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices?limit=50"
+    }
+  ],
+  "name": "X-Content-Type-Options Header Missing",
+  "pluginid": "10021",
+  "reference": "&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://owasp.org/www-community/Security_Headers&lt;/p&gt;"
+}</failure></testcase></testsuite><testsuite id="10054" name="Cookie Without SameSite Attribute"><testcase name="https://outlook-qa-15.auth0.com"><failure message="Problem:&#10;&lt;p&gt;A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.&lt;/p&gt;">{
+  "alert": "Cookie Without SameSite Attribute",
+  "alertRef": "10054",
+  "count": "2",
+  "instances": [
+    {
+      "evidence": "Set-Cookie: did_compat",
+      "method": "POST",
+      "param": "did_compat",
+      "uri": "https://outlook-qa-15.auth0.com/oauth/token"
+    },
+    {
+      "evidence": "Set-Cookie: did",
+      "method": "POST",
+      "param": "did",
+      "uri": "https://outlook-qa-15.auth0.com/oauth/token"
+    }
+  ],
+  "name": "Cookie Without SameSite Attribute",
+  "pluginid": "10054",
+  "reference": "&lt;p&gt;https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site&lt;/p&gt;"
+}</failure></testcase></testsuite></testsuite><testsuite id="Medium" name="Medium"><testsuite id="10098" name="Cross-Domain Misconfiguration"><testcase name="https://prod.cloud"><failure message="Problem:&#10;&lt;p&gt;Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).&lt;/p&gt;&lt;p&gt;Configure the &quot;Access-Control-Allow-Origin&quot; HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.&lt;/p&gt;">{
+  "alert": "Cross-Domain Misconfiguration",
+  "alertRef": "10098",
+  "count": "4",
+  "instances": [
+    {
+      "evidence": "Access-Control-Allow-Origin: *",
+      "method": "GET",
+      "uri": "https://prod.cloud/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/buildings"
+    },
+    {
+      "evidence": "Access-Control-Allow-Origin: *",
+      "method": "PUT",
+      "uri": "https://prod.cloud/buildings/888111c1-61db-4c76-acd7-e5e6ed8847d8/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52"
+    },
+    {
+      "evidence": "Access-Control-Allow-Origin: *",
+      "method": "DELETE",
+      "uri": "https://prod.cloud/buildings/888111c1-61db-4c76-acd7-e5e6ed8847d8/devices/a4633bd5-90da-4bd9-a5b7-c685d5002f52"
+    },
+    {
+      "evidence": "Access-Control-Allow-Origin: *",
+      "method": "GET",
+      "uri": "https://prod.cloud/organizations/79348fd2-cae4-4893-9c25-a9172fb9224d/devices"
+    }
+  ],
+  "name": "Cross-Domain Misconfiguration",
+  "pluginid": "10098",
+  "reference": "&lt;p&gt;http://www.hpenterprisesecurity.com/vulncat/en/vulncat/vb/html5_overly_permissive_cors_policy.html&lt;/p&gt;"
+}</failure></testcase><testcase name="https://prodint.cloud"><failure message="Problem:&#10;&lt;p&gt;Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).&lt;/p&gt;&lt;p&gt;Configure the &quot;Access-Control-Allow-Origin&quot; HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.&lt;/p&gt;">{
+  "alert": "Cross-Domain Misconfiguration",
+  "alertRef": "10098",
+  "count": "5",
+  "instances": [
+    {
+      "evidence": "Access-Control-Allow-Origin: *",
+      "method": "PUT",
+      "uri": "https://prodint.cloud/api/v1/me/identity"
+    },
+    {
+      "evidence": "Access-Control-Allow-Origin: *",
+      "method": "GET",
+      "uri": "https://prodint.cloud/api/v1/me/permissions"
+    },
+    {
+      "evidence": "Access-Control-Allow-Origin: *",
+      "method": "GET",
+      "uri": "https://prodint.cloud/api/v1/organizations"
+    },
+    {
+      "evidence": "Access-Control-Allow-Origin: *",
+      "method": "GET",
+      "uri": "https://prodint.cloud/api/v1/me"
+    },
+    {
+      "evidence": "Access-Control-Allow-Origin: *",
+      "method": "GET",
+      "uri": "https://prodint.cloud/api/v1/me/memberships"
+    }
+  ],
+  "name": "Cross-Domain Misconfiguration",
+  "pluginid": "10098",
+  "reference": "&lt;p&gt;http://www.hpenterprisesecurity.com/vulncat/en/vulncat/vb/html5_overly_permissive_cors_policy.html&lt;/p&gt;"
+}</failure></testcase></testsuite><testsuite id="10055" name="CSP: script-src unsafe-inline"><testcase name="https://assets.cloud"><failure message="Problem:&#10;&lt;p&gt;script-src includes unsafe-inline.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.&lt;/p&gt;">{
+  "alert": "CSP: script-src unsafe-inline",
+  "alertRef": "10055",
+  "count": "1",
+  "instances": [
+    {
+      "evidence": "default-src * 'unsafe-inline' 'unsafe-eval' ; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; font-src 'self' data: ; img-src * data: 'unsafe-inline' blob: ; media-src * blob: data: ; connect-src * 'unsafe-inline';",
+      "method": "GET",
+      "param": "Content-Security-Policy",
+      "uri": "https://assets.cloud/"
+    }
+  ],
+  "name": "CSP: script-src unsafe-inline",
+  "pluginid": "10055",
+  "reference": "&lt;p&gt;http://www.w3.org/TR/CSP2/&lt;/p&gt;&lt;p&gt;http://www.w3.org/TR/CSP/&lt;/p&gt;&lt;p&gt;http://caniuse.com/#search=content+security+policy&lt;/p&gt;&lt;p&gt;http://content-security-policy.com/&lt;/p&gt;&lt;p&gt;https://github.com/shapesecurity/salvation&lt;/p&gt;&lt;p&gt;https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources&lt;/p&gt;"
+}</failure></testcase><testcase name="https://assets.cloud"><failure message="Problem:&#10;&lt;p&gt;style-src includes unsafe-inline.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.&lt;/p&gt;">{
+  "alert": "CSP: style-src unsafe-inline",
+  "alertRef": "10055",
+  "count": "1",
+  "instances": [
+    {
+      "evidence": "default-src * 'unsafe-inline' 'unsafe-eval' ; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; font-src 'self' data: ; img-src * data: 'unsafe-inline' blob: ; media-src * blob: data: ; connect-src * 'unsafe-inline';",
+      "method": "GET",
+      "param": "Content-Security-Policy",
+      "uri": "https://assets.cloud/"
+    }
+  ],
+  "name": "CSP: style-src unsafe-inline",
+  "pluginid": "10055",
+  "reference": "&lt;p&gt;http://www.w3.org/TR/CSP2/&lt;/p&gt;&lt;p&gt;http://www.w3.org/TR/CSP/&lt;/p&gt;&lt;p&gt;http://caniuse.com/#search=content+security+policy&lt;/p&gt;&lt;p&gt;http://content-security-policy.com/&lt;/p&gt;&lt;p&gt;https://github.com/shapesecurity/salvation&lt;/p&gt;&lt;p&gt;https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources&lt;/p&gt;"
+}</failure></testcase><testcase name="https://assets.cloud"><failure message="Problem:&#10;&lt;p&gt;The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: &lt;/p&gt;&lt;p&gt;script-src, script-src-elem, script-src-attr, style-src, style-src-elem, style-src-attr, img-src, connect-src, frame-src, frame-ancestors, media-src, object-src, manifest-src, worker-src, prefetch-src, form-action&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.&lt;/p&gt;">{
+  "alert": "CSP: Wildcard Directive",
+  "alertRef": "10055",
+  "count": "1",
+  "instances": [
+    {
+      "evidence": "default-src * 'unsafe-inline' 'unsafe-eval' ; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; font-src 'self' data: ; img-src * data: 'unsafe-inline' blob: ; media-src * blob: data: ; connect-src * 'unsafe-inline';",
+      "method": "GET",
+      "param": "Content-Security-Policy",
+      "uri": "https://assets.cloud/"
+    }
+  ],
+  "name": "CSP: Wildcard Directive",
+  "pluginid": "10055",
+  "reference": "&lt;p&gt;http://www.w3.org/TR/CSP2/&lt;/p&gt;&lt;p&gt;http://www.w3.org/TR/CSP/&lt;/p&gt;&lt;p&gt;http://caniuse.com/#search=content+security+policy&lt;/p&gt;&lt;p&gt;http://content-security-policy.com/&lt;/p&gt;&lt;p&gt;https://github.com/shapesecurity/salvation&lt;/p&gt;&lt;p&gt;https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources&lt;/p&gt;"
+}</failure></testcase></testsuite><testsuite id="90022" name="Application Error Disclosure"><testcase name="https://assets.cloud"><failure message="Problem:&#10;&lt;p&gt;This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.&lt;/p&gt;&#10;&#10;Solution:&#10;&lt;p&gt;Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.&lt;/p&gt;">{
+  "alert": "Application Error Disclosure",
+  "alertRef": "90022",
+  "count": "1",
+  "instances": [
+    {
+      "evidence": "internal error",
+      "method": "GET",
+      "uri": "https://assets.cloud/5.099c2463aa0bfd6d8c8b.js"
+    }
+  ],
+  "name": "Application Error Disclosure",
+  "pluginid": "90022",
+  "reference": "&lt;p&gt;&lt;/p&gt;"
+}</failure></testcase></testsuite></testsuite></testsuites>
